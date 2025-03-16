@@ -1,0 +1,61 @@
+[
+  {
+    "planete": "Temporibus M3",
+    "mission": "Exploration de Temporibus M3",
+    "briefing": "Envoyer une équipe d'astronautes pour explorer la surface de Temporibus M3, collecter des échantillons de sol et de roche, et rechercher des signes de vie passée ou présente."
+  },
+
+  {
+    "planete": "Aequus P1",
+    "mission": "Station sur Aequus P1",
+    "briefing": "Établir une base permanente sur Aequus P1 pour mener des recherches scientifiques, tester de nouvelles technologies et préparer les futures missions habitées vers Temporibus M3."
+  },
+
+  {
+    "planete": "Thalassinus P2",
+    "mission": "Observatoire sur Thalassinus P2",
+    "briefing": "Lancer un télescope spatial de nouvelle génération pour observer les galaxies lointaines, étudier la formation des étoiles et des planètes, et rechercher des exoplanètes habitables."
+  },
+
+  {
+    "planete": "Degusto G0",
+    "mission": "Astéroïde Minier",
+    "briefing": "Envoyer une sonde robotique pour atterrir sur un astéroïde, extraire des ressources précieuses telles que des métaux rares, et tester les technologies de minage spatial."
+  },
+
+  {
+    "planete": "Crepusculum Z2",
+    "mission": "Exploration de Crepusculum Z2",
+    "briefing": "Envoyer une sonde pour explorer Crepusculum Z2, la plus grande lune de Thalassinus P2, analyser son atmosphère dense et ses lacs de méthane, et rechercher des conditions propices à la vie."
+  },
+
+  {
+    "planete": "Uterque M1",
+    "mission": "Retour d'Échantillons",
+    "briefing": "Lancer une mission pour collecter des échantillons de sol et de roche sur Uterque M1 et les ramener sur Terre pour une analyse détaillée en laboratoire."
+  },
+
+  {
+    "planete": "Cedo V2",
+    "mission": "Étude des Tempêtes de Cedo V2",
+    "briefing": "Placer une sonde en orbite autour de Cedo V2 pour étudier ses tempêtes, comprendre leur impact sur la Terre et améliorer les prévisions météorologiques spatiales."
+  },
+
+  {
+    "planete": "Tactus H3",
+    "mission": "Exploration de Tactus H3",
+    "briefing": "Envoyer une sonde pour étudier l'atmosphère, les tempêtes et les lunes de Tactus H3, en particulier Dolores P3, qui pourrait abriter un océan sous sa surface glacée."
+  },
+
+  {
+    "planete": "Confido C1",
+    "mission": "Défense Planétaire",
+    "briefing": "Développer et tester des technologies pour détecter, suivre et dévier les astéroïdes potentiellement dangereux qui pourraient menacer la Terre."
+  },
+
+  {
+    "planete": "Volubilis R0",
+    "mission": "Exploration de Volubilis R0",
+    "briefing": "Envoyer une sonde pour pénétrer l'épaisse atmosphère de Volubilis R0, étudier sa surface volcanique et comprendre les raisons de son effet de serre extrême."
+  }
+]
