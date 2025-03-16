@@ -1,0 +1,57 @@
+.header {
+  background: var(--mat-sys-primary);
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  .space-icon {
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+    color: white;
+  }
+
+  .app-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: white;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--mat-sys-primary-container);
+    }
+
+    &.active {
+      color: white;
+      background: rgba(20, 19, 19, 0.1);
+    }
+
+    mat-icon {
+      font-size: 20px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

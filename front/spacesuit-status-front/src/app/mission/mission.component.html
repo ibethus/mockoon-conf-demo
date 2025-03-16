@@ -1,0 +1,11 @@
+<div class="mission-container">
+  <div>
+    <img [src]="imgSource()" alt="une jolie planète" />
+    <h5>{{ mission.planete }}</h5>
+  </div>
+  <div class="text-container">
+    <h4>{{ mission.mission }}</h4>
+    <p>{{ mission.briefing }}</p>
+    <mat-checkbox [checked]="isSelected()" (click)="emitSelected()">Sélectionner la mission</mat-checkbox>
+  </div>
+</div>

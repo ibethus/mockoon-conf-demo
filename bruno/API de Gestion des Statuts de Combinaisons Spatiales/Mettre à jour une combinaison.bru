@@ -1,0 +1,30 @@
+meta {
+  name: Mettre à jour une combinaison
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/spacesuits/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 66cdb1c4-ff5e-4ff2-b064-23dc7c532a52
+}
+
+body:json {
+  {
+    "serialNumber": "NG-769448-00004",
+    "status": "EN_MAINTENANCE",
+    "oxygenLevel": 22.6,
+    "batteryLevel": 12.8,
+    "temperatureRange": {
+      "min": -55.5,
+      "max": 12.3
+    },
+    "lastMaintenanceDate": "2025-02-21T16:26:58Z",
+    "nextMaintenanceDate": "2026-03-22T16:26:58Z"
+  }
+}

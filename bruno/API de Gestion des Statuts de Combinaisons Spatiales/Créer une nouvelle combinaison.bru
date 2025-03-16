@@ -1,0 +1,26 @@
+meta {
+  name: Créer une nouvelle combinaison
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/spacesuits
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "serialNumber": "NG-769448-00004",
+    "status": "OPERATIONNEL",
+    "oxygenLevel": 78.8,
+    "batteryLevel": 85.2,
+    "temperatureRange": {
+      "min": -12.5,
+      "max": 65.8
+    },
+    "lastMaintenanceDate": "2025-02-22T16:26:58Z",
+    "nextMaintenanceDate": "2025-03-22T16:26:58Z"
+  }
+}

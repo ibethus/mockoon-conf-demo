@@ -1,0 +1,25 @@
+meta {
+  name: Conditions météo d'une planète
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/planets/:planetName/weather?latitude=45.32&longitude=31.89
+  body: none
+  auth: basic
+}
+
+params:query {
+  latitude: 45.32
+  longitude: 31.89
+}
+
+params:path {
+  planetName: venus
+}
+
+auth:basic {
+  username: space-suit-back
+  password: s3cr3t
+}

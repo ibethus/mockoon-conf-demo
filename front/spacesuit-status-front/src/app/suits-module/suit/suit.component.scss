@@ -1,0 +1,88 @@
+@use "@angular/material" as mat;
+
+.container {
+  margin: 1rem;
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  .suit-card {
+    width: 50vw;
+  }
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.actions {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+
+  mat-icon {
+    color: var(--mat-sys-tertiary);
+  }
+
+  mat-progress-bar {
+    flex-grow: 1;
+  }
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.status-operational {
+  background-color: var(--green);
+}
+
+.status-maintenance {
+  background-color: var(--orange);
+}
+
+.status-outoforder {
+  background-color: var(--red);
+}
+
+.status-active {
+  background-color: var(--purple);
+}
+
+.critical {
+  @include mat.progress-bar-overrides(
+    (
+      active-indicator-color: var(--red),
+    )
+  );
+}
+
+.warning {
+  @include mat.progress-bar-overrides(
+    (
+      active-indicator-color: var(--orange),
+    )
+  );
+}
+
+.ok {
+  @include mat.progress-bar-overrides(
+    (
+      active-indicator-color: var(--green),
+    )
+  );
+}

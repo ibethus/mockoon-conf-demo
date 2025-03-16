@@ -1,0 +1,70 @@
+<div class="container">
+  <h3>Clone #{{ suit().serialNumber }}</h3>
+  <div class="status-container">
+    <span
+      class="status-indicator"
+      [ngClass]="{
+        'status-operational': suit().status === 'OPERATIONNEL',
+        'status-maintenance': suit().status === 'EN_MAINTENANCE',
+        'status-outoforder': suit().status === 'HORS_SERVICE',
+        'status-active': suit().status === 'EN_MISSION'
+      }"
+    ></span>
+    {{ suit().status }}
+  </div>
+
+  <div class="content-row">
+    <mat-icon>battery_charging_full</mat-icon>
+    <span>Niveau de batterie</span>
+    <mat-progress-bar
+      mode="determinate"
+      [value]="suit().batteryLevel"
+      [class]="
+        suit().batteryLevel < 20
+          ? 'critical'
+          : suit().batteryLevel < 50
+          ? 'warning'
+          : 'ok'
+      "
+    ></mat-progress-bar>
+    <span>{{ suit().batteryLevel }}%</span>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="content-row">
+    <mat-icon>air</mat-icon>
+    <span>Niveau d'oxygène</span>
+    <mat-progress-bar
+      mode="determinate"
+      [value]="suit().oxygenLevel"
+      [class]="
+        suit().oxygenLevel < 20
+          ? 'critical'
+          : suit().oxygenLevel < 50
+          ? 'warning'
+          : 'ok'
+      "
+    ></mat-progress-bar>
+    <span>{{ suit().oxygenLevel }}%</span>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="content-row">
+    <mat-icon>thermostat</mat-icon>
+    <span>Précision au tir</span>
+    <span
+      >{{ suit().accuracy.min }}% à
+      {{ suit().accuracy.max }}%</span
+    >
+  </div>
+  <div class="content-row">
+    <app-validate-mission-button
+      [missionSelected]="missionSelected()"
+      [suitId]="suit().id"
+      (validateAction)="registerValidation($event)"
+      [suitAvailable]="suitAvailable()"
+    ></app-validate-mission-button>
+  </div>
+</div>

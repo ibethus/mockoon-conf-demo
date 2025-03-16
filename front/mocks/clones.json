@@ -1,0 +1,275 @@
+[
+  {
+    "id": "982a3ddb-6648-487f-b228-a4d7d78aab48",
+    "serialNumber": "30e2d7b4-84db-443c-8e42-4270d85b260f",
+    "status": "HORS_SERVICE",
+    "oxygenLevel": 11,
+    "batteryLevel": 2,
+    "accuracy": {
+      "min": 38,
+      "max": 84
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 14:27:14 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 04:15:35 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "17062d4f-24a4-4537-9f10-69d258705c00",
+    "serialNumber": "d852553b-4e06-4f41-a058-2594b40fa649",
+    "status": "EN_MISSION",
+    "oxygenLevel": 73,
+    "batteryLevel": 86,
+    "accuracy": {
+      "min": 16,
+      "max": 53
+    },
+    "lastMaintenanceDate": "Sat Mar 15 2025 19:28:01 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 08:02:17 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "2449d655-95a5-4ca9-ac63-b74f96596c1f",
+    "serialNumber": "91d93088-815a-432c-a313-405402a72ce0",
+    "status": "EN_MAINTENANCE",
+    "oxygenLevel": 46,
+    "batteryLevel": 46,
+    "accuracy": {
+      "min": 0,
+      "max": 92
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 04:36:17 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sat Mar 15 2025 17:24:24 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "8cccf5e7-54c2-4e7e-bc1a-ed26c31435f1",
+    "serialNumber": "e8e7adf4-6426-474b-aad9-aa8b218f759d",
+    "status": "HORS_SERVICE",
+    "oxygenLevel": 50,
+    "batteryLevel": 35,
+    "accuracy": {
+      "min": 6,
+      "max": 71
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 00:35:26 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 08:52:54 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "073b6718-a126-4feb-9278-b3251e420515",
+    "serialNumber": "f567d6d2-1787-4409-8e0d-3e4991f1a400",
+    "status": "HORS_SERVICE",
+    "oxygenLevel": 21,
+    "batteryLevel": 69,
+    "accuracy": {
+      "min": 4,
+      "max": 80
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 02:30:11 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 04:10:31 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "de09ce55-0406-4ff1-8300-2e44aa3b3a59",
+    "serialNumber": "700ad226-2e49-468e-8fb9-a374b858bb66",
+    "status": "EN_MISSION",
+    "oxygenLevel": 21,
+    "batteryLevel": 31,
+    "accuracy": {
+      "min": 20,
+      "max": 75
+    },
+    "lastMaintenanceDate": "Sat Mar 15 2025 20:53:21 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sat Mar 15 2025 16:49:30 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "5989f76b-0751-4824-85ce-260dc4584cb2",
+    "serialNumber": "872187ac-aea0-4140-a8c1-225f64f440dd",
+    "status": "EN_MISSION",
+    "oxygenLevel": 94,
+    "batteryLevel": 62,
+    "accuracy": {
+      "min": 11,
+      "max": 75
+    },
+    "lastMaintenanceDate": "Sat Mar 15 2025 20:04:34 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 01:24:18 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "8eb722d3-e5e0-4747-b9cd-5b85d5e1386b",
+    "serialNumber": "28285260-e560-4558-9509-cc5b9c51542f",
+    "status": "EN_MISSION",
+    "oxygenLevel": 78,
+    "batteryLevel": 53,
+    "accuracy": {
+      "min": 45,
+      "max": 64
+    },
+    "lastMaintenanceDate": "Sat Mar 15 2025 23:14:32 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sat Mar 15 2025 17:09:51 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "75e91f6c-7e77-4213-99a2-754dc8220926",
+    "serialNumber": "09d75451-5b68-44c2-9c9e-c1ac0fb1e509",
+    "status": "HORS_SERVICE",
+    "oxygenLevel": 26,
+    "batteryLevel": 7,
+    "accuracy": {
+      "min": 46,
+      "max": 79
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 12:31:07 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 11:36:27 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "6a59a715-5216-4817-ba97-8804dbd3520c",
+    "serialNumber": "f6f192f5-365d-4397-9ff3-e44fdc9eba32",
+    "status": "OPERATIONNEL",
+    "oxygenLevel": 32,
+    "batteryLevel": 85,
+    "accuracy": {
+      "min": 29,
+      "max": 50
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 09:40:43 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sat Mar 15 2025 23:27:11 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "06889c8c-be1a-4514-9909-5de3d615b151",
+    "serialNumber": "e7e1dcc2-749a-421f-9c28-85058fef40ad",
+    "status": "OPERATIONNEL",
+    "oxygenLevel": 12,
+    "batteryLevel": 59,
+    "accuracy": {
+      "min": 46,
+      "max": 54
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 13:58:31 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 03:46:38 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "2cdd72bf-124a-4d31-96a8-d6737bc97b78",
+    "serialNumber": "e71048e0-dac7-4d3a-9310-bd4f28a67bd4",
+    "status": "EN_MAINTENANCE",
+    "oxygenLevel": 91,
+    "batteryLevel": 34,
+    "accuracy": {
+      "min": 45,
+      "max": 56
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 01:57:32 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 07:51:38 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "b139a67b-56d9-425e-b3fc-3a5390743ba9",
+    "serialNumber": "1d3b80eb-fe47-4708-83fa-d75ee96c9010",
+    "status": "OPERATIONNEL",
+    "oxygenLevel": 17,
+    "batteryLevel": 74,
+    "accuracy": {
+      "min": 42,
+      "max": 92
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 00:34:32 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 05:55:09 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "a3bccf87-701a-4ab4-9e1b-255b36abe8b0",
+    "serialNumber": "201fbcc1-2c7a-4ac1-8d3b-0bb5e56fffac",
+    "status": "EN_MAINTENANCE",
+    "oxygenLevel": 73,
+    "batteryLevel": 9,
+    "accuracy": {
+      "min": 8,
+      "max": 78
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 06:07:05 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 04:58:15 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "9941208c-8811-4586-9488-d5313d430a9e",
+    "serialNumber": "37de0cf2-9604-41c8-ae70-7934850b2f87",
+    "status": "OPERATIONNEL",
+    "oxygenLevel": 23,
+    "batteryLevel": 58,
+    "accuracy": {
+      "min": 9,
+      "max": 96
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 06:27:46 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 05:00:08 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "5f267474-60fc-4797-8452-fd549f57e5d4",
+    "serialNumber": "a4f75818-510c-4e67-9593-59d28acf4b6f",
+    "status": "HORS_SERVICE",
+    "oxygenLevel": 36,
+    "batteryLevel": 27,
+    "accuracy": {
+      "min": 41,
+      "max": 89
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 09:28:11 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 10:10:47 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "fc5e1dd8-078e-4dba-8764-bcd2d93ce50a",
+    "serialNumber": "17c77238-2e96-4878-8707-d2216bfca522",
+    "status": "EN_MAINTENANCE",
+    "oxygenLevel": 77,
+    "batteryLevel": 92,
+    "accuracy": {
+      "min": 41,
+      "max": 57
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 03:36:35 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sat Mar 15 2025 18:57:30 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "db5225ff-696f-4816-9796-55956828a355",
+    "serialNumber": "a8a4a4e0-574f-4dd0-82c8-e21ef60caea5",
+    "status": "HORS_SERVICE",
+    "oxygenLevel": 32,
+    "batteryLevel": 2,
+    "accuracy": {
+      "min": 19,
+      "max": 69
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 10:30:40 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sat Mar 15 2025 23:10:12 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "420287d7-a3d2-464f-bac2-de2d136bc5c1",
+    "serialNumber": "1a61d82a-ef32-468d-9a6c-8dec688638e1",
+    "status": "EN_MAINTENANCE",
+    "oxygenLevel": 13,
+    "batteryLevel": 83,
+    "accuracy": {
+      "min": 22,
+      "max": 57
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 14:09:49 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sun Mar 16 2025 08:10:56 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "c8d24b21-5fe0-458f-aff4-3165762ee09c",
+    "serialNumber": "980b8d08-a605-4310-a02d-68b115004d55",
+    "status": "EN_MAINTENANCE",
+    "oxygenLevel": 56,
+    "batteryLevel": 69,
+    "accuracy": {
+      "min": 27,
+      "max": 88
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 09:47:29 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sat Mar 15 2025 23:24:42 GMT+0100 (heure normale d’Europe centrale)"
+  },
+  {
+    "id": "5cdef83e-6ed9-4060-a73f-ddc654fde015",
+    "serialNumber": "de4b4df0-58ef-46fe-8a99-3c9e7e545d2d",
+    "status": "HORS_SERVICE",
+    "oxygenLevel": 73,
+    "batteryLevel": 0,
+    "accuracy": {
+      "min": 2,
+      "max": 69
+    },
+    "lastMaintenanceDate": "Sun Mar 16 2025 09:34:16 GMT+0100 (heure normale d’Europe centrale)",
+    "nextMaintenanceDate": "Sat Mar 15 2025 21:07:42 GMT+0100 (heure normale d’Europe centrale)"
+  }
+]

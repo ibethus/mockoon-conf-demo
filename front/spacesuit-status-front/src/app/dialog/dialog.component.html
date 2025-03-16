@@ -1,0 +1,8 @@
+<mat-dialog-content>
+  <p>Confirmez-vous l'action suivante ?</p>
+  <p>{{ action }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button id="cancel" mat-button (click)="cancel()">Non</button>
+  <button id="confirm" mat-button (click)="confirm()">Oui</button>
+</mat-dialog-actions>

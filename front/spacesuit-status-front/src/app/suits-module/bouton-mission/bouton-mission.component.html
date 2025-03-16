@@ -1,0 +1,10 @@
+<button
+  id="mission"
+  [disabled]="!operationnel()"
+  [disabledInteractive]="!operationnel()"
+  [matTooltip]="tooltipMission()"
+  mat-raised-button
+  (click)="openDialog()"
+>
+  <mat-icon>rocket_launch</mat-icon> Envoyer en mission
+</button>

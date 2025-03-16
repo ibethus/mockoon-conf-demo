@@ -1,0 +1,19 @@
+meta {
+  name: Valider combinaison prête
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/spacesuits/:id/validate
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: dc2e1776-106e-4404-86b0-80149d782e52
+}
+
+headers {
+  Authorization: Bearer {{user_access_token}}
+}

@@ -1,0 +1,118 @@
+@if (!loading()) { @if (suit(); as suit) {
+<div class="container">
+  <div class="cards">
+    <mat-card class="suit-card">
+      <mat-card-header>
+        <mat-card-title> Clone #{{ suit.serialNumber }} </mat-card-title>
+        <mat-card-subtitle>
+          <div class="status-container">
+            <span
+              class="status-indicator"
+              [ngClass]="{
+                'status-operational': suit.status === 'OPERATIONNEL',
+                'status-maintenance': suit.status === 'EN_MAINTENANCE',
+                'status-outoforder': suit.status === 'HORS_SERVICE',
+                'status-active': suit.status === 'EN_MISSION',
+              }"
+            ></span>
+            {{ suit.status }}
+          </div>
+        </mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <div class="content-row">
+          <mat-icon>battery_charging_full</mat-icon>
+          <span>Niveau de batterie</span>
+          <mat-progress-bar
+            mode="determinate"
+            [value]="suit.batteryLevel"
+            [class]="
+              suit.batteryLevel < 20
+                ? 'critical'
+                : suit.batteryLevel < 50
+                ? 'warning'
+                : 'ok'
+            "
+          ></mat-progress-bar>
+          <span>{{ suit.batteryLevel }}%</span>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="content-row">
+          <mat-icon>air</mat-icon>
+          <span>Niveau d'oxygène</span>
+          <mat-progress-bar
+            mode="determinate"
+            [value]="suit.oxygenLevel"
+            [class]="
+              suit.oxygenLevel < 20
+                ? 'critical'
+                : suit.oxygenLevel < 50
+                ? 'warning'
+                : 'ok'
+            "
+          ></mat-progress-bar>
+          <span>{{ suit.oxygenLevel }}%</span>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="content-row">
+          <mat-icon>thermostat</mat-icon>
+          <span>Précision au tir</span>
+          <span
+            >{{ suit.accuracy.min }}% à
+            {{ suit.accuracy.max }}%</span
+          >
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="content-row">
+          <mat-icon>build</mat-icon>
+          <span>Dernière maintenance</span>
+          <span>{{ suit.lastMaintenanceDate | date }}</span>
+        </div>
+
+        <div class="content-row">
+          <mat-icon>event</mat-icon>
+          <span>Prochaine maintenance</span>
+          <span>{{ suit.nextMaintenanceDate | date }}</span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <div class="card-viewer">
+      <app-suit-viewer [suit]="suit"></app-suit-viewer>
+    </div>
+  </div>
+  <div class="actions">
+    <app-bouton-maintenance
+      [suit]="suit"
+      (validateAction)="validateMaintenance($event)"
+    ></app-bouton-maintenance>
+    <app-bouton-mission
+      [suit]="suit"
+      (validateAction)="validateMission($event)"
+    ></app-bouton-mission>
+    <app-bouton-oxygen
+      [suit]="suit"
+      (validateAction)="validateOxygenRefill($event)"
+    ></app-bouton-oxygen>
+    <app-bouton-batterie
+      [suit]="suit"
+      (validateAction)="validateBatteryRefill($event)"
+    ></app-bouton-batterie>
+    <app-bouton-suppression
+      *kaHasRoles="['sith']; checkRealm: true"
+      [suit]="suit"
+      (validateAction)="validateDelete($event)"
+    ></app-bouton-suppression>
+  </div>
+</div>
+} } @else {
+<div class="spinner-container">
+  <mat-spinner></mat-spinner>
+</div>
+}

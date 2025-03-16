@@ -1,0 +1,28 @@
+* Montrer la partie configuration
+* Authentification à l'API rest
+* Front qui se connecte à cette API
+* Connexion à la BDD
+
+Objectifs :
+* Montrer que l'on a des configs différentes pour chaque environnement (dev, intégration)
+* On peut avoir des configuration par profil de développeur (back, front, fullstack)
+
+A prévoir :
+* Des bouchons (bdd + service externe) OK 
+* Un back OK
+* Un front OK
+* Des données "réelles" (bdd + service externe) (prévoir DNS pour faux env local)
+* Un keycloak OK
+* En option : un pipeline github actions
+
+Outils que l'on souhaite utiliser :
+* devContainers
+* CDE : devpod
+
+2ème semaine :
+* Front : possibilité de faire revenir les combinaisons de mission
+* Front : images de combi OK
+* Front : messages de recap validation à afficher OK
+* Front suppression d'une combinaison OK
+* Mise en place d'un env de dev local complet sur devContainer (toutes dépendances )
+

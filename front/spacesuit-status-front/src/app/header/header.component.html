@@ -1,0 +1,32 @@
+<mat-toolbar class="header">
+  <div class="logo-container">
+    <a mat-button routerLink="/" routerLinkActive="active">
+      <mat-icon class="space-icon" fontSet="material-symbols-outlined">planet</mat-icon>
+      <span class="app-title">My Clones Manager</span>
+    </a>
+  </div>
+  @if (keycloak.authenticated) {
+  <span>Bonjour {{ username }} !</span>
+  }
+
+  <nav class="nav-links">
+    <a
+      mat-button
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <mat-icon>home</mat-icon>
+      Accueil
+    </a>
+    <a
+      *kaHasRoles="['sith']; checkRealm: true"
+      mat-button
+      routerLink="/suits"
+      routerLinkActive="active"
+    >
+      <mat-icon>engineering</mat-icon>
+      Clones
+    </a>
+  </nav>
+</mat-toolbar>

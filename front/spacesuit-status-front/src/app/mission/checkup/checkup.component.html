@@ -1,0 +1,19 @@
+<div id="title">
+  <h1>Les missions suivantes sont disponibles</h1>
+</div>
+<div class="container">
+  <div class="suit">
+    <app-suit-recap [suit]="suit" [missionSelected]="selectedIndex()"></app-suit-recap>
+  </div>
+  <div class="missions">
+    @for (mission of missionAmount; track $index) {
+    <app-mission
+      [mission]="missions[$index]"
+      [planetId]="$index + 1"
+      (iAmSelected)="updateCheckBoxes($event)"
+      [isSelected]="isMissionSelected($index)"
+    ></app-mission>
+    <mat-divider></mat-divider>
+    }
+  </div>
+</div>

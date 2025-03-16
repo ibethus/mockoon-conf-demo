@@ -1,0 +1,11 @@
+<button
+  id="batterie"
+  [disabled]="disabled()"
+  [disabledInteractive]="disabled()"
+  [matTooltip]="toolip()"
+  mat-raised-button
+  (click)="openDialog()"
+>
+  <mat-icon>check_circle</mat-icon>
+  Valider la mission
+</button>

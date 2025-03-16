@@ -1,0 +1,31 @@
+<div class="welcome-container">
+  <h1>Bienvenue sur My Clones Manager</h1>
+
+  <div class="hero-section">
+    <p class="tagline">Gérez vos clones en toute simplicité</p>
+  </div>
+
+  <div class="cta-section">
+    @if (isAuthenticated()) {
+    <button
+      mat-flat-button
+      color="primary"
+      routerLink="/suits"
+      routerLinkActive="active"
+    >
+      <mat-icon fontSet="material-symbols-outlined">planet</mat-icon>
+      Voir les clones
+    </button>
+    } @else {
+    <button
+      mat-flat-button
+      color="primary"
+      routerLink="/login"
+      routerLinkActive="active"
+    >
+      <mat-icon>lock</mat-icon>
+      Se connecter
+    </button>
+    }
+  </div>
+</div>

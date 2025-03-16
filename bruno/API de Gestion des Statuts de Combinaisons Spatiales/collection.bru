@@ -1,0 +1,19 @@
+auth {
+  mode: oauth2
+}
+
+auth:oauth2 {
+  grant_type: password
+  access_token_url: http://localhost:8180/realms/spacesuits/protocol/openid-connect/token
+  username: nico
+  password: nico
+  client_id: spacesuits-app-backend
+  client_secret: zHKJVkDmYnucLRPpCrGWZVVoSrpb6ocj
+  scope: 
+}
+
+script:post-response {
+  if(req.getAuthMode() == 'oauth2' && res.body.access_token) {
+      bru.setVar('user_access_token', res.body.access_token);
+  }
+}

@@ -1,0 +1,11 @@
+<button
+  id="maintenance"
+  [disabled]="!horsService()"
+  [disabledInteractive]="!horsService()"
+  [matTooltip]="tooltipMaintenance()"
+  mat-raised-button
+  (click)="openDialog()"
+>
+  <mat-icon>build</mat-icon>
+  Envoyer en maintenance
+</button>

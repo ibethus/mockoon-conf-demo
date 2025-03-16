@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "API de Gestion des Statuts de Combinaisons Spatiales",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
