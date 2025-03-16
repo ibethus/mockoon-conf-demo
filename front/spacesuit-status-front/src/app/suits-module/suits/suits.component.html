@@ -94,6 +94,7 @@
   [pageSize]="10"
   [pageSizeOptions]="[5, 10, 25, 50]"
   showFirstLastButtons
+  (page)="handlePageEvent($event)"
   aria-label="Sélectionner une page">
 </mat-paginator>
 } @else {

@@ -15,7 +15,7 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
 import { Suit } from '../model/suit';
 import { SpacesuitApi } from '../service/spacesuit-api';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginator, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-suits',
@@ -45,6 +45,10 @@ export class SuitsComponent implements OnInit {
     'accuracy',
   ];
   totalElements: number = 0;
+  pageIndex = 0;
+  pageSize = 10;
+  sortDirection = '';
+  sortField = '';
 
   constructor(private suitService: SpacesuitApi) {
     // Définition de la logique de tri personnalisée
@@ -77,7 +81,7 @@ export class SuitsComponent implements OnInit {
       this.paginator.page.subscribe(() => this.loadSuits());
       this.sort.sortChange.subscribe(() => {
         if (this.paginator) {
-          this.paginator.pageIndex = 0;
+          this.pageIndex = 1;
         }
         this.loadSuits();
       });
@@ -87,21 +91,23 @@ export class SuitsComponent implements OnInit {
     }
   }
 
-  loadSuits(): void {
-    const pageIndex = this.paginator?.pageIndex ?? 0;
-    const pageSize = this.paginator?.pageSize ?? 10;
-    const sortDirection = this.sort?.direction ?? '';
-    const sortField = this.sort?.active ?? '';
-    
-    const sort = sortField ? `${sortField},${sortDirection}` : '';
-
-    this.suitService.getAll(pageIndex, pageSize, sort).subscribe({
+  loadSuits(): void {    
+    const sort = this.sortField ? `${this.sortField},${this.sortDirection}` : '';
+    this.suitService.getAll(this.pageIndex, this.pageSize, sort).subscribe({
       next: (response) => {
-        this.suits.data = response.content;
-        this.totalElements = response.totalElements;
+        console.log(response.body);
+        this.suits.data = response.body ?? [];
+        this.suits.sort = this.sort;
+        this.totalElements = parseInt(response.headers.get('X-Total-Count')?? "0");
         this.loading.set(false);
       },
       error: () => this.loading.set(false)
     });
+  }
+
+  handlePageEvent(event: PageEvent) {
+    this.pageIndex = event.pageIndex+1;
+    this.pageSize = event.pageSize;
+    this.loadSuits();
   }
 }
