@@ -1,29 +1,37 @@
+import { CommonModule } from '@angular/common';
 import {
+  AfterViewInit,
   Component,
   input,
   Input,
+  OnInit,
   output
 } from '@angular/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MissionModel } from './model/misison.model';
+import { Observable } from 'rxjs';
+import { PlanetDetails } from './model/planet-detail.model';
+import { Planet } from './model/planet.model';
+import { PlanetsApi } from './service/planets-api.service';
 
 @Component({
-  selector: 'app-mission',
-  imports: [MatCheckboxModule],
+  selector: 'mission-component',
+  imports: [MatCheckboxModule, CommonModule],
   templateUrl: './mission.component.html',
   styleUrl: './mission.component.less',
 })
-export class MissionComponent {
-  @Input() planetId!: number;
-  @Input() mission!: MissionModel;
-  isSelected = input<boolean>()
-  iAmSelected = output<number>();
-  missionName!: string;
-  planetName!: string;
-  imgSource(): string {
-    return '/planet' + this.planetId + '.svg';
+export class MissionComponent implements AfterViewInit {
+  planetsApi: PlanetsApi;
+  constructor(planetsApi: PlanetsApi) {
+    this.planetsApi = planetsApi;
   }
-  emitSelected(){
-    this.iAmSelected.emit(this.planetId);
+  ngAfterViewInit(): void {
+    this.details = this.planetsApi.getDetails(this.planet.uid);
+  }
+  @Input() planet!: Planet;
+  isSelected = input<boolean>()
+  iAmSelected = output<string>();
+  details!: Observable<PlanetDetails>;
+  emitSelected() {
+    this.iAmSelected.emit(this.planet.uid);
   }
 }

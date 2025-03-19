@@ -1,31 +1,7 @@
-@if (validation()) { @if (validation()?.isValid) {
 <mat-dialog-content>
-  <p>Cette clone convient pour la météo prévue.</p>
-  @if (validation()?.message) {
-  <h4>Rapport :</h4>
-  @for (message of validation()?.message | addLine; track $index) {
-  <p>{{message}}</p>
-  } }
   <p>Confirmer l'assignation de la clone à cette mission ?</p>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button id="cancel" mat-button (click)="cancel()">Non</button>
   <button id="confirm" mat-button (click)="confirm()">Oui</button>
 </mat-dialog-actions>
-} @else {
-<mat-dialog-content>
-  <p>
-    Les données météo ne permettent pas à cette clone d'être assignée à
-    cette mission
-  </p>
-  <p>Erreur : {{ validation()?.message }}</p>
-</mat-dialog-content>
-<mat-dialog-actions>
-  <button id="cancel" mat-button (click)="cancel()">Fermer</button>
-</mat-dialog-actions>
-} } @else {
-<div class="spinner-content">
-  <span>Validation des données météo...</span>
-  <mat-spinner></mat-spinner>
-</div>
-}

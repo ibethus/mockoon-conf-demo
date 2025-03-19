@@ -3,17 +3,20 @@
 }
 .container {
   text-align: center;
-  display: flex;
-  margin: 3rem;
+  margin: 5rem;
 }
 h1 {
   color: var(--mat-sys-primary);
 }
-.suit {
-  flex: 2;
-  position: sticky;
-  margin-bottom: 2rem;
+.suit {  
+  padding: 5rem;
 }
 .missions {
   flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  & > * {
+    flex: 0 2 calc(25% - 0.75rem);
+  }
 }

@@ -1,11 +1,15 @@
 <div class="mission-container">
-  <div>
-    <img [src]="imgSource()" alt="une jolie planète" />
-    <h5>{{ mission.planete }}</h5>
-  </div>
   <div class="text-container">
-    <h4>{{ mission.mission }}</h4>
-    <p>{{ mission.briefing }}</p>
-    <mat-checkbox [checked]="isSelected()" (click)="emitSelected()">Sélectionner la mission</mat-checkbox>
+    <h4>{{ planet.name }}</h4>
+    @if (details|async; as detail) {
+    <div class="details">
+      <b>Climat : </b><span>{{ detail.result.properties.climate }}</span><br>
+      <b>Diamètre : </b><span>{{ detail.result.properties.diameter }} km</span><br>
+      <b>Type : </b><span>{{ detail.result.properties.terrain }}</span><br>
+      <b>Gravité : </b><span>{{ detail.result.properties.gravity }}</span><br>
+      <b>Population : </b><span>{{ detail.result.properties.population }}</span><br>
+    </div>
+    }
+    <mat-checkbox [checked]="isSelected()" (click)="emitSelected()">Sélectionner la planète</mat-checkbox>
   </div>
 </div>

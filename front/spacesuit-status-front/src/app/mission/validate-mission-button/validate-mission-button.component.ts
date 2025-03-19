@@ -13,15 +13,15 @@ import { ValidateMissionDialogComponent } from '../validate-mission-dialog/valid
 })
 export class ValidateMissionButtonComponent extends OpenDialogBoutonComponent {
   override actionMessage: string =
-    "Valider l'envoi de la clone sur cette mission";
+    "Valider l'envoi du clone sur cette planète";
   suitId = input<string>();
   missionSelected = input<number>();
   suitAvailable = input<boolean>();
   toolip: Signal<string> = computed(() => {
     if (!this.suitAvailable()) {
-      return "La clone n'est pas disponible";
+      return "Le clone n'est pas disponible";
     } else if (this.missionSelected() === -1) {
-      return 'Veuillez sélectionner une mission';
+      return 'Veuillez sélectionner une planète';
     }
     return this.actionMessage + ' ?';
   });
