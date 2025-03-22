@@ -1,0 +1,21 @@
+= Démo
+
+== Lecture Swagger
+* Import du swagger spacesuit
+* Présentation des helpers + fakerjs
+* Création d'un databucket
+
+== Mode proxy
+* Enregistrer les requêtes et les réponses
+* Automatiser les réponses
+* Règles de réponse
+** Latence
+
+== Token JWT
+----
+{{{stringify (jwtPayload (header 'Authorization') 'realm_access')}}}
+----
+
+* regexp pour rechercher le rôle correspondant
+
+== Déploiement

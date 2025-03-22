@@ -20,7 +20,8 @@ services:
     networks:
       - local_network
     volumes:
-      - ./:/opt/keycloak/data/import
+      - ./:/opt/keycloak/data/import      
+      - ./theme:/opt/keycloak/providers/
 networks:
   local_network:
     driver: bridge
