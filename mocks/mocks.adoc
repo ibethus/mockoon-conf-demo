@@ -1,0 +1,6 @@
+= Mocks
+
+== Token JWT
+----
+{{{stringify (jwtPayload (header 'Authorization') 'realm_access')}}}
+----
