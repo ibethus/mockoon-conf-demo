@@ -1,28 +1,27 @@
 <div class="mission-container">
   <div class="text-container">
     <h4>{{ planet.name }}</h4>
-    
+
     @if (error()) {
-      <div class="error">
-        <p>{{error()}}</p>
-      </div>
+    <div class="error">
+      <p>{{error()}}</p>
+    </div>
     } @else if (details().result != undefined) {
-      <div class="details">
-        @if (details()) {
-          <b>Climat : </b><span>{{ details().result.properties.climate }}</span><br>
-          <b>Diamètre : </b><span>{{ details().result.properties.diameter }} km</span><br>
-          <b>Type : </b><span>{{ details().result.properties.terrain }}</span><br>
-          <b>Gravité : </b><span>{{ details().result.properties.gravity }}</span><br>
-          <b>Population : </b><span>{{ details().result.properties.population }}</span><br>
-        }
-      </div>
-    } @else {
-      <div class="loading-container">
-        <mat-spinner diameter="30"></mat-spinner>
-        <span>Chargement des détails...</span>
-      </div>
-    }
-    
+    <div class="details">
+      @if (details()) {
+      <b>Climat : </b><span>{{ details().result.properties.climate }}</span><br>
+      <b>Diamètre : </b><span>{{ details().result.properties.diameter | number }} km</span><br>
+      <b>Type : </b><span>{{ details().result.properties.terrain }}</span><br>
+      <b>Gravité : </b><span>{{ details().result.properties.gravity }}</span><br>
+      <b>Population : </b><span>{{ details().result.properties.population | number }}</span><br>
+      }
+    </div>
     <mat-checkbox [checked]="isSelected()" (click)="emitSelected()">Sélectionner la planète</mat-checkbox>
+    } @else {
+    <div class="loading-container">
+      <mat-spinner diameter="30"></mat-spinner>
+      <span>Chargement des détails...</span>
+    </div>
+    }
   </div>
 </div>
