@@ -27,3 +27,38 @@
     color: #666;
   }
 }
+
+.error {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-left: 4px solid var(--red, #f44336);
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  padding: 8px 12px;
+  
+  p {
+    color: var(--red, #f44336);
+    margin: 0;
+    font-size: 14px;
+    
+    &::before {
+      content: "error";
+      font-family: 'Material Icons';
+      margin-right: 8px;
+      vertical-align: middle;
+      font-size: 16px;
+    }
+  }
+  
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

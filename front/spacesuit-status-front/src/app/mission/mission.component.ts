@@ -5,11 +5,14 @@ import {
   input,
   Input,
   OnInit,
-  output
+  output,
+  Signal,
+  signal,
+  WritableSignal
 } from '@angular/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { Observable } from 'rxjs';
+import { Observable, catchError, of } from 'rxjs';
 import { PlanetDetails } from './model/planet-detail.model';
 import { Planet } from './model/planet.model';
 import { PlanetsApi } from './service/planets-api.service';
@@ -22,16 +25,31 @@ import { PlanetsApi } from './service/planets-api.service';
 })
 export class MissionComponent implements AfterViewInit {
   planetsApi: PlanetsApi;
+  error: WritableSignal<string> = signal("");
+  loading: WritableSignal<boolean> = signal(true);
+
   constructor(planetsApi: PlanetsApi) {
     this.planetsApi = planetsApi;
   }
+
   ngAfterViewInit(): void {
-    this.details = this.planetsApi.getDetails(this.planet.uid);
+    this.planetsApi.getDetails(this.planet.uid).subscribe({
+      next: details => {
+        this.details.set(details);
+        this.loading.set(false);
+      },
+      error: error => {
+        this.error.set(`Erreur lors du chargement des détails (statut ${error.status} - ${error.statusText})`);
+        this.loading.set(false);
+      }
+    });
   }
+
   @Input() planet!: Planet;
   isSelected = input<boolean>()
   iAmSelected = output<string>();
-  details!: Observable<PlanetDetails>;
+  details: WritableSignal<PlanetDetails> = signal({} as PlanetDetails);
+
   emitSelected() {
     this.iAmSelected.emit(this.planet.uid);
   }
