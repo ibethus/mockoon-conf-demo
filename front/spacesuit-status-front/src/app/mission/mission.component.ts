@@ -8,6 +8,7 @@ import {
   output
 } from '@angular/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Observable } from 'rxjs';
 import { PlanetDetails } from './model/planet-detail.model';
 import { Planet } from './model/planet.model';
@@ -15,7 +16,7 @@ import { PlanetsApi } from './service/planets-api.service';
 
 @Component({
   selector: 'mission-component',
-  imports: [MatCheckboxModule, CommonModule],
+  imports: [MatCheckboxModule, CommonModule, MatProgressSpinnerModule],
   templateUrl: './mission.component.html',
   styleUrl: './mission.component.less',
 })

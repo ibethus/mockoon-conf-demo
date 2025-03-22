@@ -2,25 +2,30 @@
   <div id="title">
     <h1>Les planètes suivantes sont disponibles</h1>
   </div>
-  
+  @if (planetsLoaded()) {
   <div class="missions">
     @for (planet of planets(); track planet.uid) {
-    <mission-component 
-      [planet]="planet" 
-      (iAmSelected)="updateCheckBoxes($event)"
+    <mission-component [planet]="planet" (iAmSelected)="updateCheckBoxes($event)"
       [isSelected]="isMissionSelected($index)">
     </mission-component>
     }
   </div>
-  
-  <div class="suit">
-    @if (loaded()) {
-      <app-suit-recap 
-        [suit]="suit" 
-        [missionSelected]="selectedIndex()">
-      </app-suit-recap>
-    } @else {
-      <p>Chargement de la combinaison...</p>
-    }
+  } @else {
+  <div class="loading-planets">
+    <mat-spinner diameter="40"></mat-spinner>
+    <p>Chargement des planètes...</p>
   </div>
+  }
+
+  @if (loaded()) {
+  <div class="suit">
+    <app-suit-recap [suit]="suit" [missionSelected]="selectedIndex()">
+    </app-suit-recap>
+  </div>
+  } @else {
+  <div class="loading-suit">
+    <mat-spinner diameter="30"></mat-spinner>
+    <p>Chargement de la combinaison...</p>
+  </div>
+  }
 </div>

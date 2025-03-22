@@ -8,6 +8,8 @@ import {
   WritableSignal
 } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { CommonModule } from '@angular/common';
 import { Suit } from '../../suits-module/model/suit';
 import { SpacesuitApi } from '../../suits-module/service/spacesuit-api';
 import { MissionComponent } from '../mission.component';
@@ -17,7 +19,7 @@ import { SuitRecapComponent } from '../suit-recap/suit-recap.component';
 
 @Component({
   selector: 'app-checkup',
-  imports: [MissionComponent, MatSidenavModule, SuitRecapComponent],
+  imports: [MissionComponent, MatSidenavModule, SuitRecapComponent, MatProgressSpinnerModule, CommonModule],
   templateUrl: './checkup.component.html',
   styleUrl: './checkup.component.less',
 })
@@ -26,6 +28,7 @@ export class CheckupComponent {
   suit: WritableSignal<Suit> = signal({} as Suit);
   selectedIndex: WritableSignal<number> = signal(-1);
   loaded = computed(() => this.suit().id !== undefined);
+  planetsLoaded = computed(() => this.planets().length > 0);
   private suitService: SpacesuitApi;
   
   constructor(suitService: SpacesuitApi, planetApi: PlanetsApi) {
