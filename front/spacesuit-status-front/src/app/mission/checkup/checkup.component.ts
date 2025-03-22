@@ -3,6 +3,7 @@ import {
   Component,
   Input,
   Signal,
+  computed,
   signal,
   WritableSignal
 } from '@angular/core';
@@ -21,23 +22,23 @@ import { SuitRecapComponent } from '../suit-recap/suit-recap.component';
   styleUrl: './checkup.component.less',
 })
 export class CheckupComponent {
-  constructor(suitService: SpacesuitApi, httpClient: HttpClient, planetApi: PlanetsApi) {
-    this.suitService = suitService;
-    this.httpClient = httpClient;
-    planetApi.findAll().subscribe((planets$) => {
-      this.planets = signal(planets$);
-    }
-    );
-  }
-  planets!: Signal<Planet[]>;
-  suitService: SpacesuitApi;
-  httpClient: HttpClient;
-  suit!: WritableSignal<Suit>;
+  planets: WritableSignal<Planet[]> = signal([]);
+  suit: WritableSignal<Suit> = signal({} as Suit);
   selectedIndex: WritableSignal<number> = signal(-1);
+  loaded = computed(() => this.suit().id !== undefined);
+  private suitService: SpacesuitApi;
+  
+  constructor(suitService: SpacesuitApi, planetApi: PlanetsApi) {
+    this.suitService = suitService;
+    planetApi.findAll().subscribe((planets$) => {
+      this.planets.set(planets$);
+    });
+  }
+  
   @Input()
   set suitId(suitId: string) {
     this.suitService.getById(suitId).subscribe((suit$) => {
-      this.suit = signal(suit$);
+      this.suit.set(suit$);
     });
   }
 
@@ -48,6 +49,7 @@ export class CheckupComponent {
       this.selectedIndex.set(event - 1);
     }
   }
+  
   isMissionSelected(missionIndex: number): boolean {
     return missionIndex === this.selectedIndex();
   }

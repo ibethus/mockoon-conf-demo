@@ -95,7 +95,6 @@ export class SuitsComponent implements OnInit {
     const sort = this.sortField ? `${this.sortField},${this.sortDirection}` : '';
     this.suitService.getAll(this.pageIndex, this.pageSize, sort).subscribe({
       next: (response) => {
-        console.log(response.body);
         this.suits.data = response.body ?? [];
         this.suits.sort = this.sort;
         this.totalElements = parseInt(response.headers.get('X-Total-Count')?? "0");

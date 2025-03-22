@@ -23,7 +23,8 @@ import {
       },
       initOptions: {        
         onLoad: 'check-sso',
-        redirectUri: window.location.origin + '/'
+        redirectUri: window.location.origin + '/',
+        checkLoginIframe: false 
       },
       features: [
         withAutoRefreshToken({

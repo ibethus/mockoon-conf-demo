@@ -11,10 +11,6 @@ import { CheckupComponent } from './mission/checkup/checkup.component';
 
 export const routes: Routes = [
   {
-    path: '',
-    component: WelcomeComponent,
-  },
-  {
     path: 'suits',
     component: SuitsComponent,
     canActivate: [canActivateAuthRole],
@@ -39,6 +35,10 @@ export const routes: Routes = [
     component: LoginComponent,
     canActivate: [canActivateAuthRole],
     data: { role: 'sith' },
+  },
+  {
+    path: '',
+    component: WelcomeComponent,
   },
   { path: '**', component: NotFoundComponent },
 ];
