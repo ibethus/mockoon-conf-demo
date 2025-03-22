@@ -46,6 +46,7 @@ import { MatProgressSpinner } from '@angular/material/progress-spinner';
 })
 export class SuitComponent {
   private toastr: ToastrService;
+  error: WritableSignal<string> = signal("");
   constructor(
     suitService: SpacesuitApi,
     router: Router,
@@ -61,9 +62,15 @@ export class SuitComponent {
   loading: WritableSignal<boolean> = signal(true);
   @Input()
   set suitId(suitId: string) {
-    this.suitService.getById(suitId).subscribe((suit$) => {
+    this.suitService.getById(suitId).subscribe({
+      next: (suit$) => {
       this.suit = signal(suit$);
       this.loading.set(false);
+      },
+      error: (error) => {
+        this.error.set(`Erreur lors de la récupération du clone (statut ${error.status} - ${error.statusText})`);
+        this.loading.set(false);
+      },
     });
   }
 
