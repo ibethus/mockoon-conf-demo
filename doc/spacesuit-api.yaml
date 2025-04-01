@@ -73,40 +73,6 @@ paths:
       responses:
         "204":
           description: Clone supprimé avec succès
-
-  /clones/{id}/validate:
-    post:
-      summary: Valider qu'un clone est prêt pour une sortie extérieure
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: string
-      responses:
-        "200":
-          description: Clone validé et prête pour la sortie
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  isValid:
-                    type: boolean
-                  message:
-                    type: string
-        "400":
-          description: Le clone n'est pas en état pour une sortie
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  isValid:
-                    type: boolean
-                  message:
-                    type: string
-
 components:
   schemas:
     Clone:
