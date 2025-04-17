@@ -1,0 +1,1907 @@
+{
+  "uuid": "e1063976-5717-4365-9a8d-49094a93e4e3",
+  "lastMigration": 33,
+  "name": "Planetes_backup",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "a1fa0fb9-e699-4bad-bece-76ee737e34b1",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "ce118edc-4966-4a8c-811b-a7b6596db599",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "36545e6d-116f-4580-9663-12d45e77400d",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "af64fb9e-4b22-4a59-a297-aab9ad4fa17c",
+          "body": "{\n  \"message\": \"ok\",\n  \"total_records\": 60,\n  \"total_pages\": 6,\n  \"previous\": null,\n  \"next\": \"https://www.swapi.tech/api/planets?page=2&limit=10\",\n  \"results\": [\n    {\n      \"uid\": \"1\",\n      \"name\": \"Tatooine\",\n      \"url\": \"https://www.swapi.tech/api/planets/1\"\n    },\n    {\n      \"uid\": \"2\",\n      \"name\": \"Alderaan\",\n      \"url\": \"https://www.swapi.tech/api/planets/2\"\n    },\n    {\n      \"uid\": \"3\",\n      \"name\": \"Yavin IV\",\n      \"url\": \"https://www.swapi.tech/api/planets/3\"\n    },\n    {\n      \"uid\": \"4\",\n      \"name\": \"Hoth\",\n      \"url\": \"https://www.swapi.tech/api/planets/4\"\n    },\n    {\n      \"uid\": \"5\",\n      \"name\": \"Dagobah\",\n      \"url\": \"https://www.swapi.tech/api/planets/5\"\n    },\n    {\n      \"uid\": \"6\",\n      \"name\": \"Bespin\",\n      \"url\": \"https://www.swapi.tech/api/planets/6\"\n    },\n    {\n      \"uid\": \"7\",\n      \"name\": \"Endor\",\n      \"url\": \"https://www.swapi.tech/api/planets/7\"\n    },\n    {\n      \"uid\": \"8\",\n      \"name\": \"Naboo\",\n      \"url\": \"https://www.swapi.tech/api/planets/8\"\n    },\n    {\n      \"uid\": \"9\",\n      \"name\": \"Coruscant\",\n      \"url\": \"https://www.swapi.tech/api/planets/9\"\n    },\n    {\n      \"uid\": \"10\",\n      \"name\": \"Kamino\",\n      \"url\": \"https://www.swapi.tech/api/planets/10\"\n    }\n  ],\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:43.090Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9edbfbdc02c3-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:43 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"626-opVMF6VY8bj3qG8SGNrZ95sEZfw\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889742&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=89BoLVrK0eH2ekgl2PFVuniTu7WrvQpNVg%2BbWnjZPX8%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889742&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=89BoLVrK0eH2ekgl2PFVuniTu7WrvQpNVg%2BbWnjZPX8%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890643"
+            },
+            {
+              "key": "content-length",
+              "value": "2040"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "231c428d-68c9-4af2-8a75-d0885f6c6e53",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "10",
+      "responses": [
+        {
+          "uuid": "5230c8f8-b81b-43cf-a338-1c0832d8bc0f",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"temperate\",\n      \"surface_water\": \"100\",\n      \"name\": \"Kamino\",\n      \"diameter\": \"19720\",\n      \"rotation_period\": \"27\",\n      \"terrain\": \"ocean\",\n      \"gravity\": \"1 standard\",\n      \"orbital_period\": \"463\",\n      \"population\": \"1000000000\",\n      \"url\": \"https://www.swapi.tech/api/planets/10\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fb7\",\n    \"description\": \"A planet.\",\n    \"uid\": \"10\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:49.351Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9f039b7fd14b-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:49 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"468-r+7DqcFuoui0a/I4N2VjBc/SsBw\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889749&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=t7Tkttm7zIkg8Y20ocoRwZzdJW%2Bf5PFgJGxDf1VnU1w%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889749&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=t7Tkttm7zIkg8Y20ocoRwZzdJW%2Bf5PFgJGxDf1VnU1w%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890650"
+            },
+            {
+              "key": "content-length",
+              "value": "1369"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "c1d11fd6-fd20-41e2-8596-2f20ba3023aa",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "9",
+      "responses": [
+        {
+          "uuid": "e5244190-b01d-4a09-8834-49395947cdc2",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"temperate\",\n      \"surface_water\": \"unknown\",\n      \"name\": \"Coruscant\",\n      \"diameter\": \"12240\",\n      \"rotation_period\": \"24\",\n      \"terrain\": \"cityscape, mountains\",\n      \"gravity\": \"1 standard\",\n      \"orbital_period\": \"368\",\n      \"population\": \"1000000000000\",\n      \"url\": \"https://www.swapi.tech/api/planets/9\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fb6\",\n    \"description\": \"A planet.\",\n    \"uid\": \"9\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:49.348Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9f039bfe99c6-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:49 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"47f-fSKEnmE7QqZTOnppb5ObTcknOtk\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889749&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=t7Tkttm7zIkg8Y20ocoRwZzdJW%2Bf5PFgJGxDf1VnU1w%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889749&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=t7Tkttm7zIkg8Y20ocoRwZzdJW%2Bf5PFgJGxDf1VnU1w%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890650"
+            },
+            {
+              "key": "content-length",
+              "value": "1392"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "0a1e7901-541b-4145-b51f-fa498bda98f3",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "5",
+      "responses": [
+        {
+          "uuid": "cd785ba8-fd79-40fc-94ef-3ae7ec795806",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"murky\",\n      \"surface_water\": \"8\",\n      \"name\": \"Dagobah\",\n      \"diameter\": \"8900\",\n      \"rotation_period\": \"23\",\n      \"terrain\": \"swamp, jungles\",\n      \"gravity\": \"N/A\",\n      \"orbital_period\": \"341\",\n      \"population\": \"unknown\",\n      \"url\": \"https://www.swapi.tech/api/planets/5\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fb2\",\n    \"description\": \"A planet.\",\n    \"uid\": \"5\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:48.907Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9f00c90f3ca1-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:48 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"45f-NzxA61lLJKrCoS8TcZIu01UlRMA\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890649"
+            },
+            {
+              "key": "content-length",
+              "value": "1360"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "9cd8d6bc-7e86-4de3-91f1-4ae8a6843897",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "6",
+      "responses": [
+        {
+          "uuid": "1081e090-9384-4f0d-af63-2417198c4ef2",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"temperate\",\n      \"surface_water\": \"0\",\n      \"name\": \"Bespin\",\n      \"diameter\": \"118000\",\n      \"rotation_period\": \"12\",\n      \"terrain\": \"gas giant\",\n      \"gravity\": \"1.5 (surface), 1 standard (Cloud City)\",\n      \"orbital_period\": \"5110\",\n      \"population\": \"6000000\",\n      \"url\": \"https://www.swapi.tech/api/planets/6\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fb3\",\n    \"description\": \"A planet.\",\n    \"uid\": \"6\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:48.893Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9f00bbe5229a-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:48 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"483-iVN4kP4rSH+8o2Ch+IxpB5C3OTw\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890649"
+            },
+            {
+              "key": "content-length",
+              "value": "1396"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "7b932f01-9e19-43cc-b42a-d8e2b5dc3700",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "4",
+      "responses": [
+        {
+          "uuid": "8df218b3-f019-47d5-b180-6c9a6f0c7467",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"frozen\",\n      \"surface_water\": \"100\",\n      \"name\": \"Hoth\",\n      \"diameter\": \"7200\",\n      \"rotation_period\": \"23\",\n      \"terrain\": \"tundra, ice caves, mountain ranges\",\n      \"gravity\": \"1.1 standard\",\n      \"orbital_period\": \"549\",\n      \"population\": \"unknown\",\n      \"url\": \"https://www.swapi.tech/api/planets/4\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fb1\",\n    \"description\": \"A planet.\",\n    \"uid\": \"4\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:48.905Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9f00cb1cbb3f-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:48 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"47c-cxjS+hlR+2aUhqd+gpuV0PogDVI\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890649"
+            },
+            {
+              "key": "content-length",
+              "value": "1389"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "db2e332d-d8ef-4f12-be2f-accda0f5bef7",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "8",
+      "responses": [
+        {
+          "uuid": "506fe437-599c-4944-b0c2-3dc1beabd0cc",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"temperate\",\n      \"surface_water\": \"12\",\n      \"name\": \"Naboo\",\n      \"diameter\": \"12120\",\n      \"rotation_period\": \"26\",\n      \"terrain\": \"grassy hills, swamps, forests, mountains\",\n      \"gravity\": \"1 standard\",\n      \"orbital_period\": \"312\",\n      \"population\": \"4500000000\",\n      \"url\": \"https://www.swapi.tech/api/planets/8\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fb5\",\n    \"description\": \"A planet.\",\n    \"uid\": \"8\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:48.908Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9f00db5e0163-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:48 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"487-UuuW2yPkPMxe14Uy0dU0qp65LtY\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890649"
+            },
+            {
+              "key": "content-length",
+              "value": "1400"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "3879b8d0-e1e3-4790-a486-ea69eb4dbb0c",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "3",
+      "responses": [
+        {
+          "uuid": "a0b12df2-097f-4a48-b18b-893e84fd3e60",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"temperate, tropical\",\n      \"surface_water\": \"8\",\n      \"name\": \"Yavin IV\",\n      \"diameter\": \"10200\",\n      \"rotation_period\": \"24\",\n      \"terrain\": \"jungle, rainforests\",\n      \"gravity\": \"1 standard\",\n      \"orbital_period\": \"4818\",\n      \"population\": \"1000\",\n      \"url\": \"https://www.swapi.tech/api/planets/3\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fb0\",\n    \"description\": \"A planet.\",\n    \"uid\": \"3\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:48.899Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9f00cbf9f796-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:48 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"479-7MO0AtXWCoNtQQ2Zr8s1vxE+bU8\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890649"
+            },
+            {
+              "key": "content-length",
+              "value": "1386"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "57dc1900-0041-495b-b84c-8cb4b7bfef2a",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "7",
+      "responses": [
+        {
+          "uuid": "1ec756e7-ba7b-4795-8caa-ff55351f424b",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"temperate\",\n      \"surface_water\": \"8\",\n      \"name\": \"Endor\",\n      \"diameter\": \"4900\",\n      \"rotation_period\": \"18\",\n      \"terrain\": \"forests, mountains, lakes\",\n      \"gravity\": \"0.85 standard\",\n      \"orbital_period\": \"402\",\n      \"population\": \"30000000\",\n      \"url\": \"https://www.swapi.tech/api/planets/7\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fb4\",\n    \"description\": \"A planet.\",\n    \"uid\": \"7\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:48.909Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9f00dfd4f1a8-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:48 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"477-7sYFH62JdKzK5PvVpZbqkLRd0i0\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Ihl1SWqV3CdXtCPkOzHVEtqMWM7gxP8UNAxuqdDGNds%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890649"
+            },
+            {
+              "key": "content-length",
+              "value": "1384"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "5d6b5052-6dd8-436c-8ea9-7c4c9c108b60",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "2",
+      "responses": [
+        {
+          "uuid": "d2df3614-7f1e-4066-8ce6-5b4185d0786d",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"temperate\",\n      \"surface_water\": \"40\",\n      \"name\": \"Alderaan\",\n      \"diameter\": \"12500\",\n      \"rotation_period\": \"24\",\n      \"terrain\": \"grasslands, mountains\",\n      \"gravity\": \"1 standard\",\n      \"orbital_period\": \"364\",\n      \"population\": \"2000000000\",\n      \"url\": \"https://www.swapi.tech/api/planets/2\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6faf\",\n    \"description\": \"A planet.\",\n    \"uid\": \"2\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:45.598Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9eec192c6fbe-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:45 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"477-81s8IGRmBjXsBwSEJf7CR3iQaZY\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889745&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=VZ8j0ISTI0V431nYkZVzImS3gHO2TRXqVTeC1aZqTSo%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889745&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=VZ8j0ISTI0V431nYkZVzImS3gHO2TRXqVTeC1aZqTSo%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890646"
+            },
+            {
+              "key": "content-length",
+              "value": "1384"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "e01c355d-b94c-4233-8cfb-d667b6bde4bb",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "1",
+      "responses": [
+        {
+          "uuid": "51235641-57a1-4dc1-98c9-5fc879ae0fdf",
+          "body": "{\n  \"message\": \"ok\",\n  \"result\": {\n    \"properties\": {\n      \"created\": \"2025-04-16T16:35:36.562Z\",\n      \"edited\": \"2025-04-16T16:35:36.562Z\",\n      \"climate\": \"arid\",\n      \"surface_water\": \"1\",\n      \"name\": \"Tatooine\",\n      \"diameter\": \"10465\",\n      \"rotation_period\": \"23\",\n      \"terrain\": \"desert\",\n      \"gravity\": \"1 standard\",\n      \"orbital_period\": \"304\",\n      \"population\": \"200000\",\n      \"url\": \"https://www.swapi.tech/api/planets/1\"\n    },\n    \"_id\": \"5f7254c11b7dfa00041c6fae\",\n    \"description\": \"A planet.\",\n    \"uid\": \"1\",\n    \"__v\": 2\n  },\n  \"apiVersion\": \"1.0\",\n  \"timestamp\": \"2025-04-17T11:35:45.577Z\",\n  \"support\": {\n    \"contact\": \"admin@swapi.tech\",\n    \"donate\": \"https://www.paypal.com/donate/?business=2HGAUVTWGR5T2&no_recurring=0&item_name=Support+Swapi+and+keep+the+galaxy%27s+data+free%21+Your+donation+fuels+open-source+innovation+and+helps+us+grow.+Thank+you%21+%F0%9F%9A%80&currency_code=USD\",\n    \"partnerDiscounts\": {\n      \"saberMasters\": {\n        \"link\": \"https://www.swapi.tech/partner-discount/sabermasters-swapi\",\n        \"details\": \"Use this link to automatically get $10 off your purchase!\"\n      }\n    }\n  },\n  \"social\": {\n    \"discord\": \"https://discord.gg/zWvA6GPeNG\",\n    \"reddit\": \"https://www.reddit.com/r/SwapiOfficial/\",\n    \"github\": \"https://github.com/semperry/swapi/blob/main/CONTRIBUTORS.md\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "931b9eebf8d73c77-CDG"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Thu, 17 Apr 2025 11:35:45 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"45e-vQbd7Dnu3YF2e24wpo+/g9KElPc\""
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1744889745&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=VZ8j0ISTI0V431nYkZVzImS3gHO2TRXqVTeC1aZqTSo%3D\"}]}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=https://nel.heroku.com/reports?ts=1744889745&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=VZ8j0ISTI0V431nYkZVzImS3gHO2TRXqVTeC1aZqTSo%3D"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1744890646"
+            },
+            {
+              "key": "content-length",
+              "value": "1359"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "bd5fc4d9-882e-4778-9676-eda640ba1465",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "10",
+      "responses": [
+        {
+          "uuid": "6d3326c0-bd7d-4f48-bc73-1d927e0e9e5b",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "7b42d59f-8d14-47ba-b59c-1e091e954e19",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "9",
+      "responses": [
+        {
+          "uuid": "6fffb574-2584-4427-8713-021dbcb3836b",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "9e4dc07d-b215-4edf-a840-1dd9053d5386",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "7",
+      "responses": [
+        {
+          "uuid": "2c0f86d9-4144-4f60-851e-be25d649e92a",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "12b325a7-a6d5-4940-8a0c-65acb6a564ef",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "8",
+      "responses": [
+        {
+          "uuid": "505d0976-9afb-4c60-af6b-04b81f6e7b4b",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "fc2db377-8938-4477-a5d7-e4ee2bd54223",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "6",
+      "responses": [
+        {
+          "uuid": "fad23a1b-378a-465e-8221-8c9e8ed0be73",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "1bfc2bc1-ad83-458d-b8e5-9c99fc9ce543",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "5",
+      "responses": [
+        {
+          "uuid": "468d7c8f-8e93-4710-a81f-9183051b391c",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "2c3abdb1-f9e0-409f-88ce-8a11c6348b2b",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "4",
+      "responses": [
+        {
+          "uuid": "5f817998-b1f7-456a-aa54-e96d0ac2885d",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "1237e853-a9cc-405a-92f1-8238f8ba65da",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "3",
+      "responses": [
+        {
+          "uuid": "bea11100-7e92-4385-9506-53644da18317",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "7cef59f9-6cf9-427a-b7d2-a694a2bd9b41",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "2",
+      "responses": [
+        {
+          "uuid": "418a76e6-c250-4621-b903-b13ff6c57a18",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "58794d82-f457-4903-9af2-eb077caf1819",
+      "type": "http",
+      "documentation": "",
+      "method": "options",
+      "endpoint": "1",
+      "responses": [
+        {
+          "uuid": "845f6e24-8bc2-4918-b092-9ed8e6161aec",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-control-allow-headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            },
+            {
+              "key": "access-control-allow-methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": [],
+          "body": "{}"
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "a1fa0fb9-e699-4bad-bece-76ee737e34b1"
+    },
+    {
+      "type": "route",
+      "uuid": "36545e6d-116f-4580-9663-12d45e77400d"
+    },
+    {
+      "type": "route",
+      "uuid": "231c428d-68c9-4af2-8a75-d0885f6c6e53"
+    },
+    {
+      "type": "route",
+      "uuid": "c1d11fd6-fd20-41e2-8596-2f20ba3023aa"
+    },
+    {
+      "type": "route",
+      "uuid": "db2e332d-d8ef-4f12-be2f-accda0f5bef7"
+    },
+    {
+      "type": "route",
+      "uuid": "57dc1900-0041-495b-b84c-8cb4b7bfef2a"
+    },
+    {
+      "type": "route",
+      "uuid": "9cd8d6bc-7e86-4de3-91f1-4ae8a6843897"
+    },
+    {
+      "type": "route",
+      "uuid": "0a1e7901-541b-4145-b51f-fa498bda98f3"
+    },
+    {
+      "type": "route",
+      "uuid": "7b932f01-9e19-43cc-b42a-d8e2b5dc3700"
+    },
+    {
+      "type": "route",
+      "uuid": "3879b8d0-e1e3-4790-a486-ea69eb4dbb0c"
+    },
+    {
+      "type": "route",
+      "uuid": "5d6b5052-6dd8-436c-8ea9-7c4c9c108b60"
+    },
+    {
+      "type": "route",
+      "uuid": "e01c355d-b94c-4233-8cfb-d667b6bde4bb"
+    },
+    {
+      "type": "route",
+      "uuid": "bd5fc4d9-882e-4778-9676-eda640ba1465"
+    },
+    {
+      "type": "route",
+      "uuid": "7b42d59f-8d14-47ba-b59c-1e091e954e19"
+    },
+    {
+      "type": "route",
+      "uuid": "12b325a7-a6d5-4940-8a0c-65acb6a564ef"
+    },
+    {
+      "type": "route",
+      "uuid": "9e4dc07d-b215-4edf-a840-1dd9053d5386"
+    },
+    {
+      "type": "route",
+      "uuid": "fc2db377-8938-4477-a5d7-e4ee2bd54223"
+    },
+    {
+      "type": "route",
+      "uuid": "1bfc2bc1-ad83-458d-b8e5-9c99fc9ce543"
+    },
+    {
+      "type": "route",
+      "uuid": "2c3abdb1-f9e0-409f-88ce-8a11c6348b2b"
+    },
+    {
+      "type": "route",
+      "uuid": "1237e853-a9cc-405a-92f1-8238f8ba65da"
+    },
+    {
+      "type": "route",
+      "uuid": "7cef59f9-6cf9-427a-b7d2-a694a2bd9b41"
+    },
+    {
+      "type": "route",
+      "uuid": "58794d82-f457-4903-9af2-eb077caf1819"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate"
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
